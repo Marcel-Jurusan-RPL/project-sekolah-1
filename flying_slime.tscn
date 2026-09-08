@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://dj5q6ufiyl1wi"]
+
+[ext_resource type="Script" uid="uid://clnyxkt727cvh" path="res://flying_slime.gd" id="1_e6huv"]
+[ext_resource type="Texture2D" uid="uid://2ryjs4322wn6" path="res://assets/assets/images/Flying Slime/New Piskel (1).png" id="2_e6huv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rknp0"]
+atlas = ExtResource("2_e6huv")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omnf0"]
+atlas = ExtResource("2_e6huv")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w700g"]
+atlas = ExtResource("2_e6huv")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4icgv"]
+atlas = ExtResource("2_e6huv")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r720a"]
+atlas = ExtResource("2_e6huv")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yjasu"]
+atlas = ExtResource("2_e6huv")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_al2ix"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rknp0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_omnf0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w700g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4icgv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r720a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yjasu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i14dm"]
+radius = 7.0316668
+
+[node name="Flying_Slime" type="Area2D" unique_id=888180418]
+script = ExtResource("1_e6huv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1382422042]
+texture_filter = 1
+position = Vector2(237, 97)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_al2ix")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=879209936]
+texture_filter = 1
+position = Vector2(235.00002, 97.00001)
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_i14dm")
+
+[node name="Timer" type="Timer" parent="." unique_id=2050922736]
+wait_time = 2.0
+autostart = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

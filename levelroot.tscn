@@ -1,0 +1,233 @@
+[gd_scene format=4 uid="uid://cicwwo4aqx5m3"]
+
+[ext_resource type="Texture2D" uid="uid://bsewiswk4cdwk" path="res://assets/assets/images/Background/Green.png" id="1_g7inj"]
+[ext_resource type="Texture2D" uid="uid://bej7qvkb57xfr" path="res://assets/assets/images/Tilemap/Terrain (16x16).png" id="1_h6rsf"]
+[ext_resource type="PackedScene" uid="uid://3eaiirnfsgnm" path="res://player.tscn" id="2_cexat"]
+[ext_resource type="PackedScene" uid="uid://dj5q6ufiyl1wi" path="res://flying_slime.tscn" id="4_fagsv"]
+[ext_resource type="PackedScene" uid="uid://ohqpclgncyhg" path="res://snail.tscn" id="5_ukhg8"]
+[ext_resource type="PackedScene" uid="uid://j4epn8rqjmu5" path="res://apple.tscn" id="5_xamow"]
+[ext_resource type="PackedScene" uid="uid://bk5u3l75a7ty7" path="res://back_ground_music.tscn" id="6_tt36h"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cexat"]
+texture = ExtResource("1_h6rsf")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+6:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:8/0 = 0
+7:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:8/0 = 0
+8:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+6:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:9/0 = 0
+7:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:9/0 = 0
+8:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+12:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+6:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:10/0 = 0
+7:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:10/0 = 0
+8:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_g7inj"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_cexat")
+
+[node name="levelroot" type="Node2D" unique_id=55583261]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=21393466]
+texture_filter = 1
+offset_right = 1296.0
+offset_bottom = 720.0
+texture = ExtResource("1_g7inj")
+stretch_mode = 1
+
+[node name="TileMap" type="TileMapLayer" parent="." unique_id=729833077]
+texture_filter = 1
+scale = Vector2(3, 3)
+tile_map_data = PackedByteArray("AAAAAAAAAAAGAAkAAAABAAAAAAAHAAkAAAACAAAAAAAHAAkAAAADAAAAAAAHAAkAAAAEAAAAAAAHAAkAAAAFAAAAAAAHAAkAAAAGAAAAAAAHAAkAAAAHAAAAAAAHAAkAAAAIAAAAAAAHAAkAAAAJAAAAAAAHAAkAAAAKAAAAAAAHAAkAAAALAAAAAAAHAAkAAAAMAAAAAAAHAAkAAAANAAAAAAAHAAkAAAAOAAAAAAAHAAkAAAAPAAAAAAAHAAkAAAAQAAAAAAAHAAkAAAARAAAAAAAHAAkAAAASAAAAAAAHAAkAAAATAAAAAAAHAAkAAAAUAAAAAAAHAAkAAAAVAAAAAAAHAAkAAAAWAAAAAAAHAAkAAAAXAAAAAAAHAAkAAAAYAAAAAAAHAAkAAAAZAAAAAAAHAAkAAAAaAAAAAAAIAAkAAAAAAAEAAAAGAAkAAAAAAAIAAAAGAAkAAAAAAAMAAAAGAAkAAAAAAAQAAAAGAAkAAAAAAAUAAAAGAAkAAAAAAAYAAAAGAAkAAAAAAAcAAAAGAAkAAAAAAAgAAAAGAAkAAAAAAAkAAAAGAAkAAAAAAAoAAAAGAAkAAAAAAAsAAAAGAAkAAAAAAAwAAAAGAAkAAAAAAA0AAAAGAAkAAAAAAA4AAAAGAAoAAAABAA4AAAAHAAoAAAACAA4AAAAHAAoAAAADAA4AAAAHAAoAAAAEAA4AAAAHAAoAAAAFAA4AAAAHAAoAAAAGAA4AAAAHAAoAAAAHAA4AAAAHAAoAAAAIAA4AAAAHAAoAAAAJAA4AAAAHAAoAAAAKAA4AAAAHAAoAAAALAA4AAAAHAAoAAAAMAA4AAAAHAAoAAAANAA4AAAAHAAoAAAAOAA4AAAAHAAoAAAAPAA4AAAAHAAoAAAAQAA4AAAAHAAoAAAARAA4AAAAHAAoAAAASAA4AAAAHAAoAAAATAA4AAAAHAAoAAAAUAA4AAAAHAAoAAAAVAA4AAAAHAAoAAAAWAA4AAAAHAAoAAAAXAA4AAAAHAAoAAAAYAA4AAAAHAAoAAAAZAA4AAAAHAAoAAAAaAA4AAAAIAAoAAAAaAAEAAAAIAAkAAAAaAAYAAAAIAAkAAAAaAAcAAAAIAAkAAAAaAAgAAAAIAAkAAAAaAAkAAAAIAAkAAAAaAAoAAAAIAAkAAAAaAAsAAAAIAAkAAAAaAAwAAAAIAAkAAAAaAA0AAAAIAAkAAAAaAAIAAAAIAAkAAAAaAAUAAAAIAAgAAAAZAAUAAAAHAAgAAAAWAAUAAAAHAAgAAAAXAAUAAAAHAAgAAAAYAAUAAAAHAAgAAAAVAAUAAAAHAAgAAAAUAAUAAAAHAAgAAAATAAUAAAAGAAgAAAATAAYAAAAGAAoAAAAUAAYAAAAHAAoAAAAVAAYAAAAHAAoAAAAWAAYAAAAHAAoAAAAXAAYAAAAHAAoAAAAYAAYAAAAHAAoAAAAZAAYAAAAHAAoAAAAQAAcAAAAIAAgAAAAPAAcAAAAHAAgAAAAOAAcAAAAGAAgAAAAKAAkAAAAGAAgAAAALAAkAAAAIAAgAAAAOAAwAAAAGAAgAAAAOAA0AAAAGAAkAAAAPAA0AAAAIAAkAAAAPAAwAAAAIAAgAAAADAAwAAAAIAAgAAAABAAwAAAAHAAgAAAACAAwAAAAHAAgAAAACAA0AAAAHAAkAAAABAA0AAAAHAAkAAAADAA0AAAAIAAkAAAAHAAgAAAAMAAkAAAAEAAcAAAAMAAkAAAABAAYAAAAMAAkAAAA=")
+tile_set = SubResource("TileSet_g7inj")
+
+[node name="player" parent="." unique_id=1825064127 instance=ExtResource("2_cexat")]
+position = Vector2(99, 528)
+
+[node name="Enemies" type="Node2D" parent="." unique_id=773500786]
+
+[node name="Flying_Slime" parent="Enemies" unique_id=170200558 instance=ExtResource("4_fagsv")]
+position = Vector2(309, 100)
+
+[node name="snail" parent="Enemies" unique_id=459219524 instance=ExtResource("5_ukhg8")]
+position = Vector2(410, 595)
+
+[node name="snail2" parent="Enemies" unique_id=1409845098 instance=ExtResource("5_ukhg8")]
+position = Vector2(924, 595)
+
+[node name="Apples" type="Node2D" parent="." unique_id=1808184463]
+
+[node name="apple" parent="Apples" unique_id=1540250001 instance=ExtResource("5_xamow")]
+position = Vector2(-7, 221)
+
+[node name="apple2" parent="Apples" unique_id=2097165916 instance=ExtResource("5_xamow")]
+position = Vector2(138, 269)
+
+[node name="apple3" parent="Apples" unique_id=1786264630 instance=ExtResource("5_xamow")]
+position = Vector2(281, 317)
+
+[node name="apple4" parent="Apples" unique_id=51737211 instance=ExtResource("5_xamow")]
+position = Vector2(1009, 350)
+
+[node name="apple5" parent="Apples" unique_id=1389469051 instance=ExtResource("5_xamow")]
+position = Vector2(642, 506)
+
+[node name="apple6" parent="Apples" unique_id=1505005457 instance=ExtResource("5_xamow")]
+position = Vector2(895, 503)
+
+[node name="apple7" parent="Apples" unique_id=1299799058 instance=ExtResource("5_xamow")]
+position = Vector2(1126, 502)
+
+[node name="apple8" parent="Apples" unique_id=995915259 instance=ExtResource("5_xamow")]
+position = Vector2(630, 269)
+
+[node name="apple9" parent="Apples" unique_id=834214872 instance=ExtResource("5_xamow")]
+position = Vector2(1092, 170)
+
+[node name="apple10" parent="Apples" unique_id=305766962 instance=ExtResource("5_xamow")]
+position = Vector2(697, 269)
+
+[node name="BackGroundMusic" parent="." unique_id=1193344555 instance=ExtResource("6_tt36h")]
