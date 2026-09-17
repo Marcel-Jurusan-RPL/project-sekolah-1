@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Project Sekolah 1"
-run/main_scene="uid://butrk7pnbxojf"
+run/main_scene="uid://by2t8jbdt8q6"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+MainMenu="*uid://by2t8jbdt8q6"
 
 [display]
 

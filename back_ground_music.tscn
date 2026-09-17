@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://bk5u3l75a7ty7"]
-
-[ext_resource type="AudioStream" uid="uid://cmaxnty314gtm" path="res://assets/assets/sounds/music.ogg" id="1_bpacj"]
-
-[node name="BackGroundMusic" type="AudioStreamPlayer2D" unique_id=1193344555]
-stream = ExtResource("1_bpacj")
-autoplay = true
